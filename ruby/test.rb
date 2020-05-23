@@ -1,0 +1,1 @@
+puts (:simbolo.object_id == :simbolo.object_id) == (“simbolo”.object_id == “simbolo”.object_id)
