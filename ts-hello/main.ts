@@ -18,13 +18,8 @@ class LikeButton {
   constructor(private _liked: boolean = false, public _likes: number = 0) {
   }
   click() {
-    if (this._liked == false) {
-      this._liked = true;
-      this._likes++;
-    } else {
-      this._liked = false;
-      this._likes--;
-    }
+    this._likes += this._liked ? -1 : 1;
+    this._liked = !this._liked;
   }
   get likes() {
     return this._likes;
