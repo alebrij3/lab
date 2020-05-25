@@ -1,7 +1,5 @@
-function log(message) {
-  console.log(message);
-}
-
-const message = "Hello World";
-
-log(message);
+// Type Assertion
+let message;
+message = 'abc';
+let endsWithC = (<string>message).endsWith('c');
+let alsoEndsWithC = (message as string).endsWith('c');
