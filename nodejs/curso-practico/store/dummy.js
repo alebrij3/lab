@@ -15,17 +15,20 @@ const db = {
   ]
 };
 
-function list(table) {
+async function list(table) {
   return db[table]
 };
-function get(table, id) {
-  let collection = list(table);
-  return collection.filter(item => item.id === id)[0] || null;
+
+async function get(table, id) {
+  let collection = await list(table);
+  return collection.filter(item => item.id == id)[0] || null;
 };
-function upsert(table, data) {
+
+async function upsert(table, data) {
   db[collection].push(data);
 };
-function remove(table, id) {
+
+async function remove(table, id) {
   return true;
 };
 
