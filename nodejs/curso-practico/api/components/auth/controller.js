@@ -10,6 +10,8 @@ module.exports = function(injectedStore) {
 
   async function login(username, password) {
     const data = await store.query(TABLE, { username: username })
+    console.log('data pass = ' + data.password);
+    console.log(password);
 
     return bcrypt.compare(password, data.password)
       .then(match => {
