@@ -5,6 +5,7 @@ import '../styles/containers/App.styl';
 const App = () => {
   return (
     <div className="App">
+      <button type="button">Hide Map</button>
       <MapContainer />
     </div>
   )
