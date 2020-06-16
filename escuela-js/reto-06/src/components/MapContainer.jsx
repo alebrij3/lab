@@ -4,9 +4,6 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 class MapContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.setState({
-      show: 'false',
-    })
   }
 
   render() {
@@ -18,6 +15,9 @@ class MapContainer extends React.Component {
       >
         <Marker
           position={{ lat: 19.4267261, lng: -99.1718706 }}
+        />
+        <Marker
+          position={{ lat: 4.6560716, lng: -74.0595918 }}
         />
       </Map>
     );
