@@ -23,7 +23,8 @@
     "express": "^4.17.1",
     "graphql": "^15.0.0",
     "graphql-import-node": "0.0.4",
-    "graphql-tools": "^6.0.0",
-    "ncp": "^2.0.0"
+    "graphql-tools": "^6.2.3",
+    "ncp": "^2.0.0",
+    "node-fetch": "^2.6.1"
   }
 }
